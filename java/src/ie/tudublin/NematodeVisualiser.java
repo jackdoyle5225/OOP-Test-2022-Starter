@@ -50,11 +50,29 @@ public class NematodeVisualiser extends PApplet
 		}
 	}
 
-	public void displayNematodes() {
-		
+	public void displayNematodes(int n) {
+
+		stroke(255);
+		strokeWeight(1);
+		noFill();
+		if(nematodes.get(n).getLength() > 1) {
+			for(int i = 0; i <= nematodes.get(n).getLength();i++) {
+				float x = width/2;
+				float y;
+				if(i==0) {
+					y=100;
+				}else {
+					y = i * 50;
+				}
+				circle(x,y,50);
+			}
+		} else {
+			circle(0,0,50);
+		}
+
 	}
 
 	public void draw() {
-		displayNematodes();
+		displayNematodes(2);
 	}
 }
