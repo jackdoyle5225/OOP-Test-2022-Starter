@@ -50,7 +50,11 @@ public class NematodeVisualiser extends PApplet
 		}
 	}
 
+	public void displayNematodes() {
+		
+	}
+
 	public void draw() {
-		background(0);
+		displayNematodes();
 	}
 }

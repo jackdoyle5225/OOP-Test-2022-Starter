@@ -65,9 +65,9 @@ public class Nematode {
         this.gender = gender;
         this.eyes = eyes;
     }
-    
+
     public Nematode(TableRow tr) {
-        this(tr.getString("Name"), tr.getInt("Length"), tr.getInt("Limbs"), tr.getString("Gender"), tr.getInt("Eyes"));
+        this(tr.getString("name"), tr.getInt("length"), tr.getInt("limbs"), tr.getString("gender"), tr.getInt("eyes"));
     }
     
 }
